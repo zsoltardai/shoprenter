@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+
+    RewriteRule ^secret/([a-f\d]{32}|[A-F\d]{32}) secret.php?hash=$1 [NC,L]
+
+    RewriteRule secret secret.php [NC,L]
+
+</IfModule>
