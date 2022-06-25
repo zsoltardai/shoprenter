@@ -18,7 +18,7 @@ If you set the Accept header to anything else, it will automatically send you th
 
 #### example:
 
-```http request
+```
 POST /secret HTTP/1.1
 Accept: application/json
 Content-Type: application/x-www-form-urlencoded
@@ -63,7 +63,7 @@ endpoint, and we are receiving a response in application/xml format, as we reque
 As you can see we provided the encryption key in the Authorization header. It did not return an Error,
 so we can be sure about that the encryption key was valid.
 
-```http request
+```
 GET /secret/0dccc858d035e43db5f935c6fc1e0bb9 HTTP/1.1
 Authorization: ZlZSajNKRTBCY3N1VW5OVUxrVWZTc1RmdnBIOHcvZndCNXlzNURyWA
 Accept: application/xml
